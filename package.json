@@ -8,16 +8,17 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-node": "next",
-		"@sveltejs/adapter-static": "^1.0.0-next.4",
+		"@sveltejs/adapter-static": "^1.0.0-next.7",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "^10.2.5",
-		"cssnano": "^4.1.10",
-		"postcss": "^8.2.7",
+		"cssnano": "^4.1.11",
+		"postcss": "^8.2.13",
 		"postcss-load-config": "^3.0.1",
-		"svelte": "^3.29.0",
-		"svelte-preprocess": "^4.6.9",
-		"tailwindcss": "^2.0.3",
-		"vite": "^2.1.0"
+		"realm-web": "^1.2.1",
+		"svelte": "^3.37.0",
+		"svelte-preprocess": "^4.7.2",
+		"tailwindcss": "^2.1.2",
+		"vite": "^2.2.3"
 	},
 	"type": "module",
 	"engines": {

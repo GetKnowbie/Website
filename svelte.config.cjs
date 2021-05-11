@@ -22,8 +22,11 @@ module.exports = {
 		target: '#svelte',
 
 		vite: {
+			build: {
+				target: "esnext"
+			},
 			ssr: {
-				noExternal: Object.keys(pkg.dependencies || {})
+				external: Object.keys(pkg.dependencies || {})
 			}
 		}
 	}
