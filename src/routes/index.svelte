@@ -15,6 +15,7 @@
         const credentials = Realm.Credentials.anonymous();
         try {
             await $app.logIn(credentials);
+            console.log("logged in")
         } catch (err) {
             console.error("Failed to log in", err);
         }
@@ -23,19 +24,35 @@
     async function saveEmail() {
         await loginAnonymous()
         let mongodb = $app.currentUser.mongoClient("mongodb-atlas");
+        //
         let emailsColl = mongodb.db("web").collection("Email");
 
-        let emails =  await  emailsColl.find()
+
+        //
+        // let emails =  await  emailsColl.insertOne()
+
+        emailsColl.insertOne({
+            email: email
+        })
+              .then(result => console.log(`Successfully inserted item with _id: ${result.insertedId}`))
+             .catch(err => console.error(`Failed to insert item: ${err}`))
+             .finally(() => {  email = ""})
+
+
+        // console.log(emails)
+        // try {
+        //     await emails.insertOne({
+        //         email: email
+        //     });
+        // } catch (e) {
+        //
+        // }
+        // console.log(emails)
 
 
 
-        // await operators.insertOne({
-        //     email: email
-        // });
 
-        email = ""
-
-        console.log(emails)
+        // console.log(emails)
 
     }
 
