@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Mulish:wght@200;300;400;600;700;800;900&display=swap');
+
+body {
+  background-color: #F8F8F8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Mulish', sans-serif;
+  padding-top: 46px;
+}
+
+/* Navbar */
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.nav-logo img {
+  height: 50px;
+  width: 186px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links a {
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+}
+
+.nav-link-active {
+  text-decoration: none;
+  color: #2E1A47;
+}
+
+.nav-link-active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 2px;
+  background-color: #FF6A4D;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.nav-link {
+  color: #696871;
+}
+
+.nav-button button {
+  font-family: 'DM Sans', sans-serif;
+  color: #2E1A47;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #C2F1B7;
+  padding: 19px 60px;
+  border-radius: 9999px;
+  border: none;
+}
+
+/* Header */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin-top: 100px;
+}
+
+.header-text-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.header-text h1 {
+  color: #2E1A47;
+  font-weight: 900;
+  font-size: 60px;
+  width: 100%;
+}
+
+.header-text p {
+  color: #2E1A47;
+  font-size: 20px;
+  opacity: 71%;
+  font-weight: 400;
+  width: 75%;
+}
+
+.header-text button {
+  font-family: 'DM Sans', sans-serif;
+  color: #2E1A47;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #C2F1B7;
+  padding: 19px 60px;
+  border-radius: 9999px;
+  border: none;
+  width: 223px;
+  margin-top: 47px;
+}
+
+.header-img img {
+  margin-right: -35px;
+  width: 513px;
+  height: 413px;
+}
+
+.header-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 134px;
+}
+
+.header-logos img {
+  height: 27px;
+  width: 117px;
+}
+
+/* About section */
+
+.about-section {
+  width: 70%;
+  margin-top: 244px;
+}
+
+.about-container { 
+  display: flex;
+  flex-direction: row;
+}
+
+.about-container h2 { 
+  color: #2E1A47;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.about-container p { 
+  color: #2E1A47;
+  opacity: 71%;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.about-container a { 
+  cursor: pointer;
+  color: #FF6A4D;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+
+.about-container a::after { 
+  content: "→";
+  position: absolute;
+  top: -1px;
+  margin-left: 10px;
+  width: 16px;
+  height: 10px;
+}
+
+/* For Restaurants */
+
+.for-restaurants-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin-top: 211px;
+}
+
+.for-restaurants-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+
+.for-restaurants-text h3 {
+  color: #2E1A47;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.for-restaurants-text span {
+ height: 2px;
+ background-color: #2E1A47;
+ width: 56px;
+}
+
+.for-restaurants-text p {
+  color: #2E1A47;
+  opacity: 71%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.for-restaurants-mobiles {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 113px;
+}
+
+#modal-mobile {
+  position: absolute;
+  top: -37px;
+  right: -90px;
+  width: 266px;
+  height: 111px;
+}
+
+/* No name Section */
+
+.no-name-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.no-name-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+
+.no-name-section-text h3 {
+  color: #2E1A47;
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.no-name-section-text span {
+  font-size: 18px;
+  font-weight: 900;
+  color: #2E1A47;
+  opacity: 60%;
+  margin-bottom: 40px;
+}
+
+.no-name-section-text p {
+  color: #2E1A47;
+  opacity: 71%;
+  font-size: 18px;
+  font-weight: 400;
+}
